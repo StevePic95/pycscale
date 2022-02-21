@@ -4,7 +4,7 @@
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
 # Data Folder Used for storing company data
-pypcscale/Data/**
+Data/**
 
 # User-specific files
 *.rsuser
