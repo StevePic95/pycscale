@@ -1,8 +1,8 @@
-# pypcscale
+# pycscale
 ## A Python module for PC Scale users who want cleaner, more accessible business data.
 
 ### An overview of the pypcscale module
-The core purpose of pypcscale is to provide an easy way for PC Scale users to access their transaction/ticket/customer data and convert
+The core purpose of pycscale is to provide an easy way for PC Scale users to access their transaction/ticket/customer data and convert
 it to more flexible formats, allowing them to run custom reports, track new metrics, and integrate their data with in-house scripts and
 applications. The pypcscale module does not rely on any direct connection to the SQL server holding your PC Scale company file. In fact,
 pypcscale has been specifically designed not to touch the SQL database at all. (At least not directly).
