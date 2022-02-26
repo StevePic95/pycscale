@@ -135,8 +135,10 @@ For easier reference, here's a bulleted list summary of the formatting before an
 * 53: Bill Code 3 (string)
 ---
 
+In addition to piecing together the Main DataFrame, pycscale uses the PC Scale Operator Cash Report to create three additional DataFrames for cash tickets only: the Main Cash Ticket DataFrame, the Open Short Tag DataFrame, and the Closed Short Tag DataFrame.
 
 #### Main Cash Ticket DataFrame
+The Main Cash Ticket DataFrame contains some key attributes of each cash ticket. These attributes are also stored in the Main Dataframe, but for cash ticket queries, this lightweight DataFrame can also be used for better performance.
 * 0: Ticket Number
 * 1: Date
 * 2: Customer
@@ -144,12 +146,14 @@ For easier reference, here's a bulleted list summary of the formatting before an
 * 4: Cash Paid
 
 #### Open Short Tag DataFrame
+Gives information on each ticket that had an open short tag when the PC Scale Operator Cash Report was run.
 * 0: Ticket Number
 * 1: License Plate or DL Number
 * 2: Date Opened
 * 3: Short Amount
-* 
+
 #### Closed Short Tag DataFrame
+Gives information on each ticket that had a short tag closed within the time range of the PC Scale Operator Cash Report it was derived from.
 * 0: Operator
 * 1: Ticket Number
 * 2: Date Closed
